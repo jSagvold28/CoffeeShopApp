@@ -39,7 +39,7 @@ struct SkipTheLine: View {
                     .foregroundColor(.black)
                     .padding(.horizontal, 15)
                 
-                TextField("Phone number USE DASHES", text: $PhoneNumber)
+                TextField("Phone number ex: 555-555-5555", text: $PhoneNumber)
                     .padding(.horizontal, 15)
                     .padding(.bottom, 15)
                 
@@ -52,9 +52,11 @@ struct SkipTheLine: View {
                     .bold()
                     .foregroundColor(.red)
                 
-                
-                Link("                   Press here to order", destination: URL(string: "https://docs.google.com/document/d/1bNtkSemB_A_HjD4ld_irefiFLvWFNPIVDAFbQuANRyY/edit?usp=sharing")!)
-                    .underline()
+                Text("Make sure the phone number is formated in dashes. Example: 555-555-5555")
+                     
+                     
+                     Link("                   Press here to submit order ", destination: URL(string: "https://docs.google.com/document/d/1bNtkSemB_A_HjD4ld_irefiFLvWFNPIVDAFbQuANRyY/edit?usp=sharing")!)
+                         .underline()
                     .bold()
                 
             }
