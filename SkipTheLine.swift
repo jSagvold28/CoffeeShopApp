@@ -55,7 +55,7 @@ struct SkipTheLine: View {
                 Text("Make sure the phone number is formated in dashes. Example: 555-555-5555")
                      
                      
-                     Link("                   Press here to submit order ", destination: URL(string: "https://docs.google.com/document/d/1bNtkSemB_A_HjD4ld_irefiFLvWFNPIVDAFbQuANRyY/edit?usp=sharing")!)
+                     Link("              Press here to submit order ", destination: URL(string: "https://docs.google.com/document/d/1bNtkSemB_A_HjD4ld_irefiFLvWFNPIVDAFbQuANRyY/edit?usp=sharing")!)
                          .underline()
                     .bold()
                 
