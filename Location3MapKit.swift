@@ -1,5 +1,5 @@
 //
-//  Location2MapKit.swift
+//  Location3MapKit.swift
 //  CoffeeShopApp
 //
 //  Created by Jayce Sagvold on 12/12/22.
@@ -11,7 +11,7 @@ import MapKit
 
 
 
-struct Location2MapKit: View {
+struct Location3MapKit: View {
 
     @State private var region = MKCoordinateRegion(
 
@@ -33,11 +33,11 @@ struct Location2MapKit: View {
 
 
 
-struct Location2MapKit_Previews: PreviewProvider {
+struct Location3MapKit_Previews: PreviewProvider {
 
     static var previews: some View {
 
-        Location2MapKit()
+        Location3MapKit()
 
     }
 
