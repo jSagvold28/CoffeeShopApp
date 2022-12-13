@@ -53,6 +53,12 @@ struct ContentView: View {
                     Text("All CornorCoffee")
                 }
                 
+                NavigationLink {
+                    ProductsView()
+                } label: {
+                    Text("Our Products")
+                }
+                
             }
             .navigationTitle("CornorCoffee")
             
