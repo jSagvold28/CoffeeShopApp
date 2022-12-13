@@ -14,7 +14,7 @@ struct MyApp: App {
             TabView {
                 ContentView()
                     .tabItem {
-                        Label("Cofees ", systemImage: "mug.fill")
+                        Label("All", systemImage: "books.vertical.fill")
                     }
                 SkipTheLine()
                     .tabItem {
@@ -25,4 +25,3 @@ struct MyApp: App {
         }
     }
 }
- 
