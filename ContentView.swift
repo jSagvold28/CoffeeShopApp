@@ -2,13 +2,15 @@
 //  ContentView.swift
 //  CoffeeShopApp
 //
-//  Created by Jayce Sagvold on 12/11/22.
+//  Created by Jayce Sagvold on 12/12/22.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        
+        // ContentView is a redirect view to other views.
         
         
         NavigationView {
@@ -57,10 +59,9 @@ struct ContentView: View {
             }
         }
     }
-    
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-        }
-    }
 
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
