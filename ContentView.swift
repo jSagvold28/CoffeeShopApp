@@ -1,52 +1,66 @@
 //
-//  AllCornorCofee.swift
+//  ContentView.swift
 //  CoffeeShopApp
 //
-//  Created by Jayce Sagvold on 12/12/22.
+//  Created by Jayce Sagvold on 12/11/22.
 //
 
 import SwiftUI
 
-struct AllCornorCofee: View {
+struct ContentView: View {
     var body: some View {
+        
         
         NavigationView {
             
+        
             List {
+                NavigationLink {
+                    ColdDrinks()
+                } label: {
+                    Text("Cold Drinks")
+            }
                 
                 NavigationLink {
-                    
-                    Location1Details()
+                    HotDrinks()
                 } label: {
-                    Text("Locaiton 1")
+                    Text("Hot Drinks")
                 }
                 
                 NavigationLink {
-                    
-                    Location2Details()
+                    SkipTheLine()
                 } label: {
-                    Text("Location 2")
+                    Text("In a hurry? Skip the line!")
                 }
                 
                 NavigationLink {
-                    
-                    Location3Details()
-                    
+                    TipAStaff()
                 } label: {
-                    Text("Location 3")
+                    Text("Tip a Staff")
+                }
+                
+                NavigationLink {
+                    FindACornorCoffeeNearYou()
+                } label: {
+                    Text("Find us near you")
+                }
+                
+                NavigationLink {
+                    AllCornorCofee()
+                } label: {
+                    Text("All CornorCoffee")
                 }
                 
             }
-            .navigationTitle("All CornorCoffee")
+            .navigationTitle("CornorCoffee")
             
-        
-        
+            }
+        }
     }
-}
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
+    }
 
-struct AllCornorCofee_Previews: PreviewProvider {
-    static var previews: some View {
-        AllCornorCofee()
-    }
-}
-}
