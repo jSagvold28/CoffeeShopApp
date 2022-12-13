@@ -57,7 +57,7 @@ struct DrinkContainers: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                 
-                Text("$8.99")
+                Text("$9.89")
                     .font(.title3)
                     .bold()
                     .foregroundColor(.green)
